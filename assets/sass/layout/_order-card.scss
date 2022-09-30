@@ -11,7 +11,8 @@
     text-align: center;
 
     &__banner {
-        @include img-fluid;
+        width: 100%;
+        object-fit: contain;
         transition: $theme-transition;
         border-radius: 1.25rem 1.25rem 0 0;
     }
