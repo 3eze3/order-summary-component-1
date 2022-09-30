@@ -1,0 +1,23 @@
+.attribution {
+    margin-top: 0.325rem;
+    text-align: center;
+    font-size: 0.588rem;
+
+    a {
+        color: $theme-bright-blue-color;
+    }
+}
+
+@include media-breakpoint-up($screen-lg) {
+    .attribution {
+        position: fixed;
+        bottom: 0.325rem;
+        width: 100%;
+    }
+}
+
+@include media-hover-effect() {
+    a:hover  {
+        color: $theme-dark-blue-color;
+    }
+}

@@ -1,0 +1,130 @@
+.card {
+    box-shadow: $theme-box-shadow;
+    border-radius: 1.25rem;
+    transition: $theme-transition;
+    background-color: $theme-white-color; 
+}
+
+.card-order {
+    max-width: 25.125rem;
+
+    text-align: center;
+
+    &__banner {
+        @include img-fluid;
+        transition: $theme-transition;
+        border-radius: 1.25rem 1.25rem 0 0;
+    }
+    
+    &__content{
+        padding: 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.35rem;
+    }
+
+    &__description {
+        line-height: 1.5;
+        margin: 1.125rem 0;
+    }
+
+    // Plan container styles
+    &__plan {
+        background-color: $theme-pale-blue-color;
+        padding: 1rem;
+        line-height: 1.25;
+        
+        border-radius: 1rem;
+        @include flex(row, space-around, center);
+        flex-wrap: wrap;
+        gap: 0.75rem;
+
+        .btn--active {
+            font-size: 0.738rem;
+        }
+    }
+
+    &__icon {
+        @include img-fluid;
+        max-width: 2.5rem;
+    }
+
+    &__resume {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    &__type, &__price {
+        font-size: 0.875rem;
+    }
+
+    .btn--primary {
+        margin: 1.2rem 0;
+    }
+}
+
+@include media-breakpoint-up($screen-sm) {
+    .card-order {
+        &__content {
+            padding: 2rem;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__description {
+            line-height: 1.6;
+        }
+
+        &__plan {
+            gap: 1.25rem;
+
+            .btn--active {
+                font-size: 0.875rem;
+            }
+        }
+
+        &__icon {
+            max-width: 3rem;
+        }
+
+        &__type, &__price {
+            font-size: 1.025rem; 
+        }
+    }
+}
+
+@include media-breakpoint-up($screen-rwd) {
+    .card-order {
+        max-width: 28.125rem;
+        
+        &__content {
+            padding: 2.5rem 2.95rem 2.95rem 2.95rem;
+        }
+
+        &__title {
+            font-size: 1.75rem;
+        }
+
+        &__plan {
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+        
+        .btn--primary {
+            margin: 1.875rem 0;
+        }
+    }
+}
+
+@include media-hover-effect() {
+    .card:hover {
+        box-shadow: $theme-box-shadow-hover;
+
+        .card-order__banner {
+            opacity: 0.85;
+        }
+    }
+}

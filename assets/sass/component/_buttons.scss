@@ -1,0 +1,52 @@
+.btn {
+    border: 0;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 0.938rem;
+    transition: $theme-transition;
+    text-decoration: none;
+
+    &--link {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    &--active {
+        color: $theme-bright-blue-color;
+        text-decoration: underline;
+    }
+
+    &--primary {
+        display: block;
+        width: 100%;
+        color: $theme-white-color;
+        padding: 0.95rem 1.5rem;
+
+        background-color: $theme-bright-blue-color;
+        border-radius: 0.7rem;
+        box-shadow: $theme-box-shadow-alt;
+    }
+
+    &--secondary {
+        color: $theme-desaturated-blue-color;
+    }
+}
+
+@include media-hover-effect() {
+    .btn {
+        &--primary:hover {
+            background-color: lighten($theme-bright-blue-color, 15%);
+            box-shadow: $theme-box-shadow-hover;
+        }
+
+        &--active:hover {
+            color: lighten($theme-bright-blue-color, 15%);
+            text-decoration: none;
+        }
+
+        &--secondary:hover {
+            color: $theme-dark-blue-color;
+        }
+    }
+}
