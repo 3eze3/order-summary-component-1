@@ -17,7 +17,7 @@
 }
 
 @include media-hover-effect() {
-    a:hover  {
+    .attribution a:hover  {
         color: $theme-dark-blue-color;
     }
 }
