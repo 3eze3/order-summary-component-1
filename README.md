@@ -4,6 +4,13 @@
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+<h2 align="center">Links</h2>
+
+- Solution URL: [Order Summary Component (SASS + Mobile first + BEM) | Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-sass-mobile-first-bem-BlfUdr5oBv)
+- Live Site URL: [https://order-summary-component-melvinhdz.vercel.app/](https://order-summary-component-melvinhdz.vercel.app/)
+
+<br>
+
 ## Table of contents
 
 - [Overview](#overview)
