@@ -7,8 +7,8 @@
         color: $theme-bright-blue-color;
     }
 }
-
-@include media-breakpoint-up($screen-lg) {
+ 
+@include media-double-breakpoint-up($screen-lg, min-width, 640px, min-height) {
     .attribution {
         position: fixed;
         bottom: 0.325rem;

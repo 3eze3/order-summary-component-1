@@ -6,14 +6,13 @@ body {
     @include flex;
     width: 100%;
     min-height: 100vh;
-    padding: 1.55rem;
+    padding: 1rem 1.55rem;
 
     background: $theme-background-color url('../images/pattern-background-mobile.svg') no-repeat left top/contain;
 }
 
 @include media-breakpoint-up($screen-sm) {
     body {
-        padding: 0.25rem;
         background-image: url('../images/pattern-background-desktop.svg');
     }
 }
