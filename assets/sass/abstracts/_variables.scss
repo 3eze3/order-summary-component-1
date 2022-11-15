@@ -17,12 +17,12 @@ $theme-white-color: hsl(0, 0%, 100%);
 $theme-transition: all 0.2s ease-in-out;
 
 // Breakpoints
-$screen-sm: 576px; // Large smartphones
-$screen-md: 768px; // Small tablets
-$screen-lg: 992px; // Tablets
-$screen-xl: 1200px; // Desktops
-$screen-xxl: 1440px; // Large desktops
-$screen-rwd: 1439px; // Custom device
+$screen-sm: 36em;       //576px Large smartphones
+$screen-md: 48em;       //768px Small tablets
+$screen-lg: 62em;       //992px Tablets
+$screen-xl: 75em;       //1200px Desktops
+$screen-xxl: 87.5em;    //1400px Large desktops
+$screen-rwd: 89.9375em; //1439px; Custom device
 
 // Border shadow
 $theme-box-shadow: 0.063rem 0.063rem 3.125rem rgba($theme-dark-blue-color, 0.12),

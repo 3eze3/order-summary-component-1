@@ -4,11 +4,17 @@ body {
     color: $theme-desaturated-blue-color;
 
     @include flex;
-    width: 100%;
     min-height: 100vh;
     padding: 1rem 1.55rem;
 
     background: $theme-background-color url('../images/pattern-background-mobile.svg') no-repeat left top/contain;
+}
+
+:is(a, button, input, textarea, select, details, summary) {
+    &:focus-visible {
+        outline: $theme-bright-blue-color dotted 0.18rem;
+        outline-offset: 0.18rem
+    }
 }
 
 @include media-breakpoint-up($screen-sm) {

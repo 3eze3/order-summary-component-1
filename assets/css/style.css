@@ -86,13 +86,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   min-height: 100vh;
   padding: 1rem 1.55rem;
   background: hsl(225deg, 100%, 94%) url("../images/pattern-background-mobile.svg") no-repeat left top/contain;
 }
 
-@media screen and (min-width: 576px) {
+:is(a, button, input, textarea, select, details, summary):focus-visible {
+  outline: hsl(245deg, 75%, 52%) dotted 0.18rem;
+  outline-offset: 0.18rem;
+}
+
+@media screen and (min-width: 36em) {
   body {
     background-image: url("../images/pattern-background-desktop.svg");
   }
@@ -157,7 +161,7 @@ body {
   margin: 1.2rem 0;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36em) {
   .card-order__content {
     padding: 2rem;
   }
@@ -180,7 +184,7 @@ body {
     font-size: 1.025rem;
   }
 }
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 89.9375em) {
   .card-order {
     max-width: 28.125rem;
   }
@@ -267,15 +271,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .attribution {
-  margin-top: 0.325rem;
+  margin-block: 0.5rem;
+  font-size: 0.735rem;
   text-align: center;
-  font-size: 0.588rem;
 }
 .attribution a {
   color: hsl(245deg, 75%, 52%);
 }
-
-@media screen and (min-width: 992px) and (min-height: 640px) {
+@media screen and (min-width: 36em) and (min-height: 50em) {
   .attribution {
     position: fixed;
     bottom: 0.325rem;
@@ -284,7 +287,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (hover: hover) {
   .attribution a:hover {
-    color: hsl(223deg, 47%, 23%);
+    color: #3828e0;
   }
 }
 

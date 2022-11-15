@@ -12,30 +12,32 @@
 </head>
 <body>
     <main class="card card-order">
-        <img src="./assets/images/illustration-hero.svg" alt="Illustration of hero" class="card-order__banner">
-        <section class="card-order__content">
+        <img src="./assets/images/illustration-hero.svg" alt aria-hidden="true" class="card-order__banner">
+        <div class="card-order__content">
             <h1 class="card-order__title">Order Summary</h1>
             <p class="card-order__description">
                 You can now listen to millions of songs, audiobooks, and podcasts on any 
                 device anywhere you like!
             </p>
-            <article class="card-order__plan">
-                <img src="./assets/images/icon-music.svg" alt="Music icon" class="card-order__icon">
+            <div class="card-order__plan">
+                <img src="./assets/images/icon-music.svg" alt aria-hidden="true" class="card-order__icon">
                 <div class="card-order__resume">
                     <h2 class="card-order__type">Annual Plan</h2>
                     <p class="card-order__price">
                         <span class="sr-only">(Price) </span>$59.99/year
                     </p>
                 </div>
-                <button class="btn btn--link btn--active">Change</button>
-            </article>
+                <button class="btn btn--link btn--active" type="button">Change</button>
+            </div>
             <a href="#" class="btn btn--primary">Proceed to Payment</a>
             <a href="#" class="btn btn--secondary">Cancel Order</a>
-        </section>
+        </div>
     </main>
     <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/MelvinAguilar" target="_blank">Melvin Aguilar</a>.
+        <p>
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/MelvinAguilar" target="_blank" rel="noopener">Melvin Aguilar</a>.    
+        </p>
     </footer>
 </body>
 </html>
